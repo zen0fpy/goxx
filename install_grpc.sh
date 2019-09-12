@@ -4,7 +4,7 @@
 
 protoc_file="protoc-3.10.0-rc-1-linux-x86_64.zip"
 if [[ ! -e $protoc_file ]];then
-wget https://github.com/protocolbuffers/protobuf/releases/download/v3.10.0-rc1/$protoc_file
+wget -c https://github.com/protocolbuffers/protobuf/releases/download/v3.10.0-rc1/$protoc_file
 test $? -ne 0 && "download failed for protoc" && exit
 fi
 
